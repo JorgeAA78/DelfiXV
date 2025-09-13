@@ -1,0 +1,350 @@
+/* Estilos Generales */
+main {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: transparent;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+#mi-video-fondo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    background-size: cover;
+    filter: brightness(0.6);
+}
+
+/* Tipografía */
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+}
+
+h1 { font-size: 4em; }
+h2 { font-size: 2.5em; }
+h3 { font-size: 1.8em; }
+
+p {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+/* Sección Principal */
+#principal {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.contenido-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.info-principal {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.play {
+    display: block;
+    margin: 0 auto 10px auto;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    color: #b38b6d;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+}
+
+.play-label {
+    font-size: 1.0rem;
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.date {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+.titulo-principal {
+    font-size: 5rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+
+.nombre-principal {
+    font-size: 2.8rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: -20px;
+    transform: rotate(-11deg) translateX(100px);
+}
+
+.mensaje {
+    font-size: 1.2rem;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.7;
+}
+
+.contador-box {
+    background-color: rgba(82, 1, 133, 0.84);
+    border: 4px solid whitesmoke;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contador-box p {
+    margin-bottom: 15px;
+    font-size: 2.0em;
+    font-family: 'Dancing Script', cursive;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.tiempo-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.tiempo-item .numero {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.tiempo-item .label {
+    font-family: 'Dancing Script', cursive;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+/* Secciones y Tarjetas */
+.seccion {
+    padding: 12px 25px;
+}
+
+.seccion-content {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tarjeta {
+    background-color: rgba(82, 1, 133, 0.84);
+    border: 4px solid whitesmoke;
+    padding: 15px 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    min-height: 380px;
+}
+
+.nombre-salon {
+    font-size: 1.7em; /* Aumenta este valor para hacerlo más grande */
+    font-weight: bold;  /* Opcional: para que esté en negrita */
+    margin-bottom: 1em; /* Opcional: para darle más espacio debajo */
+}
+
+.hora {
+    font-size: 1.5em; /* Aumenta este valor para hacerlo más grande */
+    font-weight: bold;  /* Opcional: para que esté en negrita */
+    margin-bottom: 1em; /* Opcional: para darle más espacio debajo */
+}
+
+.codigo {
+    font-size: 2.0em; /* Aumenta este valor para hacerlo más grande */
+    font-weight: bold;  /* Opcional: para que esté en negrita */
+    margin-bottom: 1em; /* Opcional: para darle más espacio debajo */
+}
+
+.icono {
+    font-size: 2.5em;
+    color: #b38b6d;
+    margin-bottom: 15px;
+}
+
+.boton-enlace {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: #b38b6d;
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.boton-enlace:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Estilo para cuando se hace clic en el botón o se navega con teclado */
+.boton-enlace:focus, .boton-enlace:active {
+    background-color: #b38b6d; /* Mantiene el color original */
+    transform: scale(1.05);   /* Mantiene el efecto de crecimiento */
+    outline: none;            /* Quita el borde azul que ponen algunos navegadores */
+}   
+
+/* Galería de Fotos */
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.galeria-fotos img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-fotos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Estilos de Despedida (movidos desde el HTML) */
+.despedida-subtitulo {
+    margin: 0 0 8px;
+    text-align: center;
+    font-size: 3.0em; /* Añade esta línea y ajusta el valor */
+}
+
+.despedida-titulo {
+    margin: 0;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 5.0em; /* Añade esta línea y ajusta el valor */
+}
+
+/* --- ESTILOS COMPLETOS PARA ANIMACIONES --- */
+
+/* PARTE 1: El motor principal para animar elementos grandes (tarjetas, fotos, etc.) */
+.animar-entrada {
+    opacity: 0;
+    /* CORRECCIÓN: Faltaba una 's' en el segundo valor de tiempo */
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+.animar-desde-derecha {
+    transform: translateX(50px);
+}
+.animar-desde-abajo {
+    transform: translateY(50px);
+}
+.animar-desde-izquierda {
+    transform: translateX(-50px);
+}
+.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* PARTE 2: El añadido para animar los iconos y botones DENTRO de las tarjetas */
+.animar-entrada .animar-contenido {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Aumentamos la duración para que el efecto sea más lento */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+.animar-entrada.visible .icono.animar-contenido {
+    /* Aumentamos el retraso para que tarde más en aparecer */
+    transition-delay: 0.5s;
+}
+.animar-entrada.visible .boton-enlace.animar-contenido {
+    /* Hacemos que el botón aparezca un poco después del icono */
+    transition-delay: 0.8s;
+}
+.animar-entrada.visible .animar-contenido {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* PARTE 3: La optimización para los títulos de despedida */
+.despedida-subtitulo,
+.despedida-titulo {
+    /* Le da una pista al navegador para que optimice la animación de estos elementos */
+    will-change: transform, opacity;
+}
+/* --- FIN DE ESTILOS COMPLETOS PARA ANIMACIONES --- */
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    opacity: .9;
+    font-size: 14px;
+    padding: 24px 0 60px;
+}
+
+/* ----- DISEÑO RESPONSIVO (MEDIA QUERIES) ----- */
+@media (max-width: 768px) {
+    h1 { font-size: 3em; }
+    h2 { font-size: 2em; }
+    p { font-size: 1em; }
+    .seccion-content { flex-direction: column; align-items: center; }
+    .tarjeta { max-width: 90%; min-height: auto; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 1.8em; }
+    .galeria-fotos img { max-width: 100%; }
+    .tiempo-item .numero { font-size: 2rem; }
+    .tiempo-item .label { font-size: 0.7rem; }
+}
